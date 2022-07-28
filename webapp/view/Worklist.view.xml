@@ -10,8 +10,8 @@
         toggleHeaderOnTitleClick="false">
 
         <semantic:titleHeading>
-            <Title
-                text="{i18n>worklistTitle}"
+            <Title id="_IDGenTitle1"
+                text="Commited changes to GIT hub"
                 level="H2"/>
         </semantic:titleHeading>
 
@@ -33,18 +33,18 @@
                 updateFinished=".onUpdateFinished">
 
                 <headerToolbar>
-                    <OverflowToolbar>
+                    <OverflowToolbar id="_IDGenOverflowToolbar1">
                         <Title
                             id="tableHeader"
                             text="{worklistView>/worklistTableTitle}"
                             level="H3"/>
-                        <ToolbarSpacer />
+                        <ToolbarSpacer id="_IDGenToolbarSpacer1" />
                         <SearchField
                             id="searchField"
                             tooltip="{i18n>worklistSearchTooltip}"
                             search=".onSearch">
                             <layoutData>
-                                <OverflowToolbarLayoutData
+                                <OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData1"
                                     maxWidth="200px"
                                     priority="NeverOverflow"/>
                             </layoutData>
@@ -62,13 +62,13 @@
                 </columns>
 
                 <items>
-                    <ColumnListItem
+                    <ColumnListItem id="_IDGenColumnListItem1"
                         type="Navigation"
                         press=".onPress">
                         <cells>
-                            <ObjectIdentifier
+                            <ObjectIdentifier id="_IDGenObjectIdentifier1"
                                 title="{CategoryName}"/>
-                            <ObjectNumber
+                            <ObjectNumber id="_IDGenObjectNumber1"
                                 number="{
                                     path: 'CategoryID',
                                     formatter: '.formatter.numberUnit'
